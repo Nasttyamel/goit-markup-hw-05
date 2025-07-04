@@ -455,6 +455,7 @@ input {
 .footer-subscribe-inter {
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 .footer-input {
   margin-right: 24px;
@@ -465,14 +466,22 @@ input {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 8px 16px;
   background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
+
+.placeholder {
+  color: #ffffff;
+}
+
 .footer-input:hover {
   border: 1px solid #31d0aa;
 }
 .footer-button {
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   color: #fff;
@@ -480,13 +489,20 @@ input {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
+  min-width: 165px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
 }
 .footer-button:hover {
   background-color: #31d0aa;
 }
 .footer-svg {
   fill: #fff;
+  margin-left: 16px;
 }
 /*Footer end*/
 .backdrope {
@@ -649,7 +665,7 @@ input {
   justify-content: center;
   fill: transparent;
 }
-.checkbox-text input:checked + .chec-svg {
+input[type="checbox"]:checked + label {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
