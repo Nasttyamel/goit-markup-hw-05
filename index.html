@@ -47,7 +47,7 @@
         <section class="hero-baner">
             <div class="container">
              <h1 class="hero-baner-title">Effective Solutions for Your Business</h1>
-             <button type="button" class="hero-baner-button">Order Service</button>
+             <button type="button" class="hero-baner-button" data-modal-open>Order Service</button>
             </div>
         </section>
             <section class="advantages">
@@ -401,9 +401,9 @@
         </div>
     </div>
     </footer>
-    <div class="backdrope">
+    <div class="backdrope" data-modal>
         <div class="modal">
-            <button class="button-close" type="button">
+            <button class="button-close" type="button" data-modal-close>
                 <svg class="button-close-svg" width="8" height="8">
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -447,12 +447,12 @@
                 
                 <div class="checkbox-container">
                     <input class="chec visually-hidden" type="checkbox" id="user-privacy"  value="true" name="user-privacy"> 
-                    <label for="user-privacy" class="checkbox-text">I accept the terms and conditions of the 
+                    <label for="user-privacy" class="checkbox-text"> 
                         <span class="checkbox-span">
                         <svg class="chec-svg" width="10" height="8">
                             <use href="./images/icons.svg#icon-vector"></use>
                         </svg>
-                    </span>
+                    </span> I accept the terms and conditions of the
                     <a class="checkbox-link"
                             href="">Privacy Policy</a></label>
                     
@@ -461,7 +461,7 @@
                  </form>
         </div>
     </div>
-    
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
